@@ -1,9 +1,47 @@
-body{
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
 
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
 }
 
 .titulo-principal{
     padding-left: 30px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 #banner {
@@ -43,9 +81,10 @@ em strong{
 /* Lista en HTML Ordenada en una class que perimte reutilizar el estilo */
 .items{
     font-style: italic;
+    
 }
 
-ul{
+h4 ul{
     display: inline-block;
     vertical-align: top;
     width: 20%;
@@ -55,5 +94,19 @@ ul{
 
 .imagenDiferenciales{
    width: 50%; 
+}
+
+footer {
+    text-align: center;
+    background: url(./imagenes/bg.jpg);
+    padding: 40px;
+
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+
 }
 
