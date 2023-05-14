@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Contacto - Barbería Alura</title>
+        <title>Contacto - Barbería Richard</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -21,6 +21,7 @@
         </header>
 		<main>
 			<form>
+
 				<label for="nombreapellido">Nombre y Apellido</label>
 				<input type="text" id = "nombreapellido" class="input-padron" required>
 
@@ -34,6 +35,7 @@
 				<textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
 				
 				<fieldset>
+
 					<legend>¿Cómo le gustaría que lo contactemos?</legend>
 					
 					<label for="radio-email"><input type="radio" name="contacto" value="email" id="radiop-email">Email</label>
@@ -41,11 +43,11 @@
 					<label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radiop-telefono">Teléfono</label>
 					
 					<label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radiop-whatsapp" checked>WhatsApp</label>
-					
-			    </fieldset>
+			    
+				</fieldset>
 
 				<fieldset>
-					<legend>¿En cual horario prefiere ser atendido?</legend>
+					<legend>¿En cuál horario prefiere ser atendido?</legend>
 					<select>
 						<option>Mañana</option>
 						<option>Tarde</option>
@@ -53,16 +55,40 @@
 					</select>
 				</fieldset>
 
-				<label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label> 
+				<label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Richard?</label> 
 
-				<input type="submit" value="Enviar formulario">
-
+				<input type="submit" value="Enviar formulario" class="enviar">
 			</form>
+
+			<table>
+
+				<thead>
+					<tr>
+						<th>Días</th>
+						<th>Horario</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Lunes</td>
+						<td>08h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Miércoles</td>
+						<td>08h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Viernes</td>
+						<td>08h ~ 20h</td>
+					</tr>
+				</tbody>
+			</table>
 		</main>
 
 		<footer>
             <img src="./imagenes/logo-blanco.png" alt="Logo de Barbería Alura">
-            <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
+            <p class="copyright">&copy Copyright Barbería Richard - 2023</p>
         </footer>
 	</body>
 </html>

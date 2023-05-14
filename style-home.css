@@ -38,7 +38,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.titulo-principal{
+.titulo-principal {
     padding-left: 30px;
     font-weight: bold;
     font-size: 30px;
@@ -48,12 +48,12 @@ nav a:hover {
     width: 100%;
 }
 
-.principal{
+.principal {
     background: #cccccc;
     padding: 20px;
 }
 
-.titulo-centralizado{
+.titulo-centralizado {
     text-align: center;
 }
 
@@ -62,29 +62,30 @@ p{
 }
 
 /*Selector de Etiqueta*/
-em strong{
+em strong {
     color: red;
 }
 
 /* Selector de Identificadores */
-#mision{
+
+#mision {
     font-size: 20px;
 }
 
 /* Selector de Clases */
 
-.diferenciales{
+.diferenciales {
     background: #FFFFFF;
     padding: 30px;
 }
 
-/* Lista en HTML Ordenada en una class que perimte reutilizar el estilo */
-.items{
+/* Lista en HTML Ordenada en una class que permite reutilizar el estilo */
+.items {
     font-style: italic;
     
 }
 
-h4 ul{
+h4 ul {
     display: inline-block;
     vertical-align: top;
     width: 20%;
@@ -92,7 +93,7 @@ h4 ul{
 
 }
 
-.imagenDiferenciales{
+.imagenDiferenciales {
    width: 50%; 
 }
 
@@ -109,4 +110,3 @@ footer {
     margin: 20px;
 
 }
-
