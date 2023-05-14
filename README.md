@@ -1,3 +1,5 @@
 # drzamora.github.io
-barbershop
-En construcción
+
+Barbershop Richard
+
+En construcción, pendientes cambios de estilo.
