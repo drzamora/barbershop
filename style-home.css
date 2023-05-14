@@ -1,0 +1,59 @@
+body{
+
+}
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+/*Selector de Etiqueta*/
+em strong{
+    color: red;
+}
+
+/* Selector de Identificadores */
+#mision{
+    font-size: 20px;
+}
+
+/* Selector de Clases */
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+/* Lista en HTML Ordenada en una class que perimte reutilizar el estilo */
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+
+}
+
+.imagenDiferenciales{
+   width: 50%; 
+}
+
