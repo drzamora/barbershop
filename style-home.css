@@ -1,59 +1,17 @@
-header {
-    background-color: #BBBBBB;
-    padding: 20px 0;
-
-}
-
-.caja {
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
-
-}
-
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
-
-}
-
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-
-}
-
-nav a {
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 22px;
-    text-decoration: none;
-
-}
-
-nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
-}
-
-.titulo-principal {
+.titulo-principal{
     padding-left: 30px;
-    font-weight: bold;
-    font-size: 30px;
 }
 
-#banner {
-    width: 100%;
+#banner{
+    width:100%;
 }
 
-.principal {
-    background: #cccccc;
+.principal{
+    background: #CCCCCC;
     padding: 20px;
 }
 
-.titulo-centralizado {
+.titulo-centralizado{
     text-align: center;
 }
 
@@ -61,52 +19,31 @@ p{
     text-align: center;
 }
 
-/*Selector de Etiqueta*/
-em strong {
-    color: red;
+em strong{
+    color:red;
 }
 
-/* Selector de Identificadores */
-
-#mision {
+#mision{
     font-size: 20px;
 }
 
-/* Selector de Clases */
-
-.diferenciales {
+.diferenciales{
     background: #FFFFFF;
     padding: 30px;
 }
 
-/* Lista en HTML Ordenada en una class que permite reutilizar el estilo */
-.items {
+.items{
     font-style: italic;
-    
 }
 
-h4 ul {
+ul{
     display: inline-block;
     vertical-align: top;
     width: 20%;
     margin-right: 15%;
-
 }
 
-.imagenDiferenciales {
-   width: 50%; 
+.imagenDiferenciales{
+    width: 50%;
 }
 
-footer {
-    text-align: center;
-    background: url(./imagenes/bg.jpg);
-    padding: 40px;
-
-}
-
-.copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px;
-
-}
