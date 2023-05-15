@@ -2,4 +2,6 @@
 
 Barbershop Richard
 
-En construcción, pendientes cambios de estilo.
+Para ver la página ingresa a https://drzamora.github.io/
+
+Página en construcción, pendientes cambios de estilo.
