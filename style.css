@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -7,7 +7,7 @@ header {
     padding: 20px 0;
 }
 
-.caja{
+.caja {
     width: 940px;
     position: relative;
     margin: 0 auto;
@@ -19,12 +19,12 @@ nav{
     right: 0;
 }
 
-nav li{
+nav li {
     display: inline;
     margin: 0 0 0 15px;
 }
 
-nav a{
+nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -32,19 +32,19 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #c78c19;
     text-decoration: underline;
 }
 
-.productos{
+.productos {
     width: 940px;
     margin: 0 auto;
     padding: 50px;
 }
 
 
-.productos li{
+.productos li {
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -56,68 +56,74 @@ nav a:hover{
     border-radius: 10px;
 }
 
-.productos li:hover{
+.productos li:hover {
     border-color:#c78c19;
 }
 
-.productos li:active{
+.productos li:active {
     border-color:#088c19;
 }
 
-.productos h2{
+.productos h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
-.productos li:hover h2{
+.productos li:hover h2 {
     font-size: 33px;
 }
 
-.producto-descripcion{
+.producto-descripcion {
     font-size: 18px;
 }
 
-.producto-precio{
+.producto-precio {
     font-size: 20px;
     font-weight: bold;
     margin-top:10px;
 }
 
-footer{
+footer {
     text-align: center;
     background: url(./imagenes/bg.jpg);
     padding:40px;
 }
 
-.copyright{
+.copyright {
     color:#FFFFFF;
     font-size: 13px;
     margin:20px;
 }
 
+main form {
 
-form{
+    width: 940px;
+    margin: 0 auto;  
+}
+
+form {
+    padding: 3em 0;
     margin: 40px 0;
 }
 
-form label, form legend{
+form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-.input-padron{
+.input-padron {
     display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
 
-.checkbox{
+.checkbox {
     margin:20px 0;
 }
 
-.enviar{
+.enviar {
     width: 40%;
     padding: 15px 0;
     font-size: 18px;
@@ -130,30 +136,58 @@ form label, form legend{
     cursor:pointer;
 }
 
-.enviar:hover{
+.enviar:hover {
     background: darkorange;
     transform: scale(1.2);
 }
 
-table{
-    margin: 40px 40px;
+table {
+    margin: 40px 300px 40px;
 }
 
-thead{
+thead {
     background: #555555;
     color:white;
     font-weight: bold;
 }
 
-td,th{
+td,th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
 
 /*Aquí inicia el CSS para nuestra página home*/
+
 .banner {
     width: 100%;
 }
+
+
+/* Selectores avanzados 
+
+/*  Selector > , para acceder a los hijos de determinado elemento. elemento > hijo pinta el primer parrafo de main 
+main > p {
+    background: red;
+}
+
+/*  Selector +, para acceder al primer hermano de determinado elemento. imagen + p  pinta el parrafo después de la imagen es hermano de img
+img + p {
+    background: yellow;
+}
+
+/*  Selector ~, para acceder a todos los hermanos de determinado elemento. imagen ~ p  pinta todos los parrafos después de la imagen 
+img ~ p {
+    background: green;
+}
+
+/*  Selector not, para acceder a los elementos, excepto algunos. .principal p:not(#mision)  pinta todos los parrafos de orange menos el parrafo con el id mision 
+.principal p:not(#mision) {
+    background: orange;
+}
+*/
+
+/* Cálculo con CSS con la propiedad calc | width: calc(40% - (26px * 4)); */
+
 
 .principal {
     padding: 3em 0;
@@ -167,6 +201,12 @@ td,th{
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
+    /* Opacidad en el texto con el 30%
+    color: rgba(0, 0, 0, 30%);
+    */
+    /* Sombra en el texto
+    text-shadow: 2px 2px 10px red;
+    */
 }
 
 /*Pseudo-elementos
@@ -192,7 +232,7 @@ p::first-line {
     margin: 0 0 1em;
 }
 
-.mapa-contenido{
+.mapa-contenido {
     width: 940px;
     margin: 0 auto;
 }
@@ -251,6 +291,13 @@ p::first-line {
 
 .imagen-diferenciales {
     width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover {
+    opacity: 30%;
+
 }
 
 .video {
@@ -258,4 +305,53 @@ p::first-line {
     margin: 1em auto;
 }
 
+/* Media query apicar a ancho maximo de 480px */
+@media screen and (max-width:480px) {
 
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .checkbox, .input-padron, .productos {
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales, .productos li {
+        width: 100%; 
+    }
+
+    form {
+        box-sizing: border-box;
+        padding: 25px 50px;
+        max-width: 100%;
+    }
+
+    #mensaje {
+        box-sizing: border-box;
+        max-width: 80%;
+    }
+
+
+    legend {
+        width: 100%;
+    }
+
+    .checkbox {
+        margin:20px 0;
+        width: 100%;
+    }
+
+    .enviar {
+        width: 100%;
+    }
+
+    table {
+        margin: 40px 70px 40px;
+        width: auto;
+    }
+
+}
