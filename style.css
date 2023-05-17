@@ -142,8 +142,9 @@ form label, form legend {
 }
 
 table {
-    margin: 40px 300px 40px;
-}
+    margin: 0 0 2em 30em;
+
+} 
 
 thead {
     background: #555555;
@@ -326,8 +327,8 @@ p::first-line {
 
     form {
         box-sizing: border-box;
-        padding: 25px 50px;
-        max-width: 100%;
+        padding: 20px 50px;
+        max-width: 95%;
     }
 
     #mensaje {
